@@ -1,0 +1,32 @@
+.saved-articles__list {
+  background-color: #f5f6f7;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 8px;
+  margin: 0 auto;
+  padding: 32px 0;
+  justify-content: center;
+}
+
+.saved-articles__section {
+  margin: 0 104px;
+}
+
+.news-cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 8px;
+  margin: 0 auto 62px;
+  padding: 0;
+  justify-content: center;
+}
+
+.saved-articles__empty {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}

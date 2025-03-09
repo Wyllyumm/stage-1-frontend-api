@@ -1,0 +1,133 @@
+.footer {
+  display: flex;
+  background-color: #ffffff;
+  height: 88px;
+  width: 100%;
+  align-items: center;
+}
+
+.footer__copyright {
+  color: #b6bcbf;
+  margin: 32px auto 26px 104px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+
+.footer__links {
+  color: black;
+}
+
+.footer__tripleten {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.footer__home {
+  display: flex;
+  margin: 28px 40px 28px auto;
+  align-items: center;
+  gap: 15px;
+  color: black;
+}
+
+.footer__home-btn {
+  display: flex;
+  margin: 28px 40px 28px auto;
+  align-items: center;
+  gap: 15px;
+  color: black;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 24px;
+  margin: 28px 104px 28px 0;
+}
+
+.footer__icon_github {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__icon_fb {
+  width: 24px;
+  height: 24px;
+}
+
+/* --- Responsive Styles for Smaller Screens --- */
+
+@media screen and (max-width: 860px) {
+  .footer__copyright {
+    margin: 32px auto 26px 40px;
+  }
+
+  .footer__socials {
+    margin: 28px 40px 28px 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .footer__copyright {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer__copyright {
+    margin: 8px 16px 32px 16px;
+    /*justify-content: space between; */
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer {
+    flex-direction: column-reverse;
+    height: 176px;
+    position: relative;
+  }
+
+  /*.footer__copyright {
+    margin: 38px 16px 32px 16px;
+    /*justify-content: space between; 
+  }*/
+
+  .footer__home {
+    flex-direction: column;
+    margin: 28px auto 0 6px;
+    gap: 0;
+    align-items: unset;
+  }
+
+  .footer__home-btn {
+    margin: 0;
+  }
+
+  .footer__tripleten {
+    margin-bottom: 30px;
+  }
+
+  .footer__socials {
+    margin: 20px 16px 0 auto;
+    position: absolute;
+    right: 0px;
+    bottom: 110px;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    gap: 5px; /* Reduce spacing for compact layout */
+  }
+}

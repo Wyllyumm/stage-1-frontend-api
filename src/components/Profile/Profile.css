@@ -1,0 +1,13 @@
+.profile__cards-section {
+  background-color: #f5f6f7;
+}
+
+.profile__articles {
+  margin: 0 104px;
+}
+
+@media screen and (max-width: 908px) {
+  .profile__articles {
+    margin: 0 38px;
+  }
+}
