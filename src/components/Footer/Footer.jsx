@@ -12,14 +12,40 @@ function Footer({}) {
       </p>
 
       <div className="footer__home">
-        <Link to="/" className="navigation__link">
-          <p className="footer__home-btn">Home</p>
+        <Link to="/" className="footer__home-btn footer__link">
+          Home
         </Link>
-        <p className="footer__tripleten">TripleTen</p>
+
+        <a
+          href="https://tripleten.com"
+          targer="_blank"
+          rel="noopener noreferrer"
+          className="footer__link"
+        >
+          <p className="footer__tripleten">TripleTen</p>
+        </a>
       </div>
       <div className="footer__socials">
-        <img src={githubIcon} className="footer__icon_github" />
-        <img src={facebookIcon} className="footer__icon_fb" />
+        <a
+          href="https://github.com/Wyllyumm"
+          targer="_blank"
+          rel="noopener noreferrer"
+          className="footer__link"
+        >
+          <img src={githubIcon} className="footer__icon" alt="Github logo" />
+        </a>
+        <a
+          href="https://www.facebook.com/tripleten.tech"
+          targer="_blank"
+          rel="noopener noreferrer"
+          className="footer__link"
+        >
+          <img
+            src={facebookIcon}
+            className="footer__icon"
+            alt="Facebook logo"
+          />
+        </a>
       </div>
     </footer>
   );

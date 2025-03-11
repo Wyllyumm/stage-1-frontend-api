@@ -10,8 +10,8 @@ const SignupModal = ({
 }) => {
   const [buttonIsActive, setButtonIsActive] = useState(false);
   const signupSubmitBtnClassName = buttonIsActive
-    ? "modal__submit modal__submit_signup_active"
-    : "modal__submit modal__submit_siginup";
+    ? "modal__submit modal__submit--siginup-login modal__submit--active"
+    : "modal__submit modal__submit--siginup-login";
 
   const [name, setUsername] = useState("");
   const handleUsernameChange = (e) => {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import "./SearchForm.css";
 
@@ -10,6 +10,12 @@ function SearchForm({ handleSearchForm }) {
     setKeyWord(e.target.value);
   };
 
+  const [buttonIsActive, setButtonIsActive] = useState(false);
+
+  const searchBtnSubmitClassName = buttonIsActive
+    ? "search__button search__button--active"
+    : "search__button";
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     if (!keyword) {
@@ -19,6 +25,14 @@ function SearchForm({ handleSearchForm }) {
     handleSearchForm(keyword);
   };
 
+  useEffect(() => {
+    if (keyword) {
+      setButtonIsActive(true);
+    } else {
+      setButtonIsActive(false);
+    }
+  }, [keyword]);
+
   return (
     <div className="search__container">
       <h1 className="search__title">What's going on in the world?</h1>
@@ -26,7 +40,7 @@ function SearchForm({ handleSearchForm }) {
         Find the latest news on any topic and save them in your personal
         account.
       </h2>
-      <div className="search__input_container">
+      <div className="search__input-container">
         <label htmlFor="news" className="search__label">
           <input
             type="text"
@@ -35,12 +49,13 @@ function SearchForm({ handleSearchForm }) {
             onChange={handleSearchFieldChange}
             value={keyword}
             placeholder="Enter topic"
+            required
           />
         </label>
         <button
           type="submit"
           onClick={handleSearchSubmit}
-          className="search__buttton"
+          className={searchBtnSubmitClassName}
         >
           &nbsp;Search
         </button>

@@ -19,7 +19,7 @@ function Header({
     : "header__logo";
   /*const { currentUser } = useContext(CurrentUserContext); */
   return (
-    <div className={headerClassName}>
+    <header className={headerClassName}>
       <div className="header__all">
         <Link to="/" className="navigation__link">
           <p className={headerLogoClassName}>NewsExplorer</p>
@@ -36,7 +36,7 @@ function Header({
       </div>
       <span className="header__seperator"></span>
       {isSavedNews ? null : <SearchForm handleSearchForm={handleSearchForm} />}
-    </div>
+    </header>
   );
 }
 

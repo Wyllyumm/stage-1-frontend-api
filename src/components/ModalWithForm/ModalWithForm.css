@@ -30,9 +30,13 @@
   cursor: pointer;
 }
 
+.modal__close:hover {
+  transform: scale(1.1);
+}
+
 .modal__title {
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 100%;
@@ -44,8 +48,8 @@
 
 .modal__register-ok-signin {
   position: absolute;
-  bottom: 44px;
-  left: 22px;
+  bottom: 20px;
+  left: 36px;
   /* right: 0; */
   border: none;
 
@@ -53,7 +57,7 @@
   background: transparent;
   color: #2f71e5;
   cursor: pointer;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 100%;
@@ -62,7 +66,7 @@
 
 .modal__register-title {
   margin: 0;
-  font-family: "Cabinet Grotesk";
+  font-family: "Cabinet Grotesk", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -72,7 +76,7 @@
 .modal__content {
   background-color: #fff;
   position: relative;
-  padding: 28px 28px 100px;
+  padding: 34px 36px 64px;
   width: 430px;
   /*width: 100%; */
   box-sizing: border-box;
@@ -99,7 +103,7 @@
   padding: 0;
   padding-bottom: 4px;
   margin-top: 8px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
@@ -111,7 +115,7 @@
 .modal__submit {
   width: 124px;
   cursor: pointer;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -131,7 +135,7 @@
   max-width: 440px;
   justify-content: flex-start;
   margin-top: 24px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
@@ -144,7 +148,7 @@
 .modal__label_type_radio {
   margin-top: 8px;
   color: #00000080;
-  font-family: "Cabinet Grotesk";
+  font-family: "Cabinet Grotesk", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -157,7 +161,7 @@
 
 .modal__legend {
   margin-bottom: 4px;
-  font-family: "Cabinet Grotesk";
+  font-family: "Cabinet Grotesk", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -180,7 +184,7 @@
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
@@ -199,43 +203,21 @@
   background-color: rgba(0, 0, 0, 1);
 }
 
-.modal__submit_item_active {
+.modal__submit--active {
   background-color: rgba(0, 0, 0, 1);
 }
 
-.modal__submit_login {
+.modal__submit--siginup-login {
   margin: 39px auto 0;
-}
-
-.modal__submit_login_active {
-  margin: 39px auto 0;
-  background-color: rgba(0, 0, 0, 1);
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.modal__submit_siginup {
-  margin: 39px auto 0;
-}
-
-.modal__submit_signup_active {
-  /*margin-top: 32px;*/
-  margin: 39px auto 0;
-  background-color: rgba(0, 0, 0, 1);
 }
 
 .modal__or-btn {
   position: absolute;
-  bottom: 44px;
+  bottom: 24px;
   left: 0;
   right: 0;
   border: none;
-  font-family: "Cabinet Grotesk";
+  font-family: "Cabinet Grotesk", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -243,6 +225,10 @@
   background: transparent;
   color: #2f71e5;
   cursor: pointer;
+}
+
+.modal__or-btn:hover {
+  color: #3399ff;
 }
 
 .modal-open .navigation__menu-button {
@@ -266,10 +252,16 @@
 
 @media screen and (max-width: 490px) {
   .modal {
-    top: auto;
+    top: 10px;
   }
 
   .modal__content {
     height: 86vh;
+    padding: 16px 16px 64px;
+  }
+
+  .modal__or-btn {
+    top: 266px;
+    bottom: auto;
   }
 }

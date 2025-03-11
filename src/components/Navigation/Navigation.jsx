@@ -13,13 +13,13 @@ function Navigation({
   handleUserSignout,
 }) {
   // State for mobile menu and window resizing
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 388);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
   const [menuOpen, setMenuOpen] = useState(false); // Tracks if dropdown is open
   const { currentUser } = useContext(CurrentUserContext);
 
   // Update state on window resize
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 388);
+    const handleResize = () => setIsMobile(window.innerWidth <= 500);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -29,19 +29,19 @@ function Navigation({
 
   // Dynamic class names
   const homeBtnClassName = isSavedNews
-    ? "navigation__home navigation__home_saved"
+    ? "navigation__home navigation__home--saved"
     : "navigation__home";
   const savedBtnClassName = isSavedNews
-    ? "navigation__saved-articles_saved"
+    ? " navigation__saved-articles navigation__saved-articles--saved"
     : "navigation__saved-articles";
   const signoutImgSrcName = isSavedNews ? signOutBtnSaved : signOutBtn;
   const signoutBtnClassName = isSavedNews
-    ? "navigation__signout navigation__signout_saved"
+    ? "navigation__signout navigation__signout--saved"
     : "navigation__signout";
 
-  const menuBtnClassName = isSavedNews
-    ? "navigation__menu-button navigation__menu-button-saved"
-    : "navigation__menu-button";
+  const dropdownBtnClassName = isSavedNews
+    ? "navigation__dropdown-button navigation__dropdown-button--saved"
+    : "navigation__dropdown-button";
 
   return (
     <div className="navigation">
@@ -52,10 +52,15 @@ function Navigation({
       {isMobile ? (
         <>
           {/* Mobile Menu Button */}
-          <button className={menuBtnClassName} onClick={toggleMenu}></button>
+          <button
+            className={dropdownBtnClassName}
+            onClick={toggleMenu}
+          ></button>
 
           {/* Fullscreen Dropdown Menu */}
-          <div className={`navigation__dropdown ${menuOpen ? "open" : ""}`}>
+          <div
+            className={`navigation__dropdown-menu ${menuOpen ? "open" : ""}`}
+          >
             {/* Close button */}
             <button
               className="navigation__close-button"
@@ -63,14 +68,18 @@ function Navigation({
             ></button>
 
             {/* Navigation Links */}
-            <Link to="/" className="navigation__link" onClick={toggleMenu}>
+            <Link
+              to="/"
+              className="navigation-dropdown__link navigation-dropdown__link--home"
+              onClick={toggleMenu}
+            >
               <div className="navigation__home-mobile">Home</div>
             </Link>
 
             {isLoggedIn && (
               <Link
                 to="/saved-news"
-                className="navigation__link"
+                className="navigation-dropdown__link navigation-dropdown__link--saved-articles"
                 onClick={toggleMenu}
               >
                 <div className="navigation__saved-articles-mobile">
@@ -86,7 +95,7 @@ function Navigation({
                   handleUserSignout();
                   toggleMenu();
                 }}
-                className="navigation__signout-mobile"
+                className="navigation__signin-out-mobile"
               >
                 Sign Out
               </button>
@@ -96,7 +105,7 @@ function Navigation({
                   handleLoginModal();
                   toggleMenu();
                 }}
-                className="navigation__signin-mobile"
+                className="navigation__signin-out-mobile"
               >
                 Sign In
               </button>

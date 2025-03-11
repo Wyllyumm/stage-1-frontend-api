@@ -8,7 +8,7 @@
 }
 
 .rofile-header_saved-articles {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -18,7 +18,7 @@
 .profile-header__personal {
   max-width: 530px;
   max-height: 92px;
-  font-family: "Roboto Slab";
+  font-family: "Roboto-slab", Arial, sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 46px;
@@ -26,7 +26,7 @@
 }
 
 .profile-header__keywords {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -34,7 +34,7 @@
 }
 
 .profile-header__span-keywords {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;

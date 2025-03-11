@@ -3,10 +3,11 @@ import { useContext } from "react";
 import "./ProfileHeader.css";
 import { CurrentUserContext } from "../../Contexts/CurrentUserContext";
 
-function ProfileHeader({ savedNewsArticles = [], searchKeyWord }) {
+function ProfileHeader({ savedNewsArticles, searchKeyWord }) {
   const articleNumber = savedNewsArticles.length;
   const { currentUser } = useContext(CurrentUserContext);
   const formatKeywords = (keywords) => {
+    console.log(keywords);
     if (keywords.length === 0) return ""; // No keywords
 
     if (keywords.length === 1) return keywords[0]; // Single keyword

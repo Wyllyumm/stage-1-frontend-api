@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 
 import "./App.css";
 import PageNotFound from "../PageNotFound/PageNotFound";
@@ -35,21 +35,18 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [isRegistered, setIsRegistered] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState({});
-
+  const [buttonIsActive, setButtonIsActive] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const isSavedNews = location.pathname === "/saved-news";
 
   const [isSearching, setIsSearching] = useState(false);
+  const location = useLocation(); //to enable navigation with HashRouter
+  const isSavedNews = location.pathname === "/saved-news";
   const handleLoginClick = () => {
     setActiveModal("login");
   };
 
   const handleSignupClick = () => {
     setActiveModal("signupModal");
-  };
-
-  const handleRegisterSuccessModal = () => {
-    setActiveModal("RegisterSuccessModal");
   };
 
   const closeActiveModal = () => {

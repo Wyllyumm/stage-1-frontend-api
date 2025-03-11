@@ -65,7 +65,7 @@ function NewsCard({
             <div className="news-card__popup">Sign in to save articles</div>
           )}
           {isSavedNews && showToolTip && (
-            <div className="news-card__delete-popup">Remove from saved</div>
+            <div className="news-card__popup">Remove from saved</div>
           )}
           {isSavedNews ? (
             <button

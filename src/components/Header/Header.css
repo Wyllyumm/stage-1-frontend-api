@@ -26,7 +26,7 @@
   margin: 30px 0 26px 104px;
   position: relative;
   z-index: 10002;
-  font-family: "Roboto Slab";
+  font-family: "Roboto-slab", Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -39,7 +39,7 @@
   color: black;
   z-index: 10002;
   position: relative;
-  font-family: "Roboto Slab";
+  font-family: "Roboto-slab", Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;

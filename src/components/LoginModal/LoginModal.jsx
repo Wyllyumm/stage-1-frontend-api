@@ -12,8 +12,8 @@ const LoginModal = ({
   const [buttonIsActive, setButtonIsActive] = useState(false);
 
   const loginSubmitBtnClassName = buttonIsActive
-    ? "modal__submit modal__submit_login_active"
-    : "modal__submit modal__submit_login";
+    ? "modal__submit modal__submit--siginup-login modal__submit--active"
+    : "modal__submit modal__submit--siginup-login";
 
   const [email, setEmail] = useState("");
   const handleEmailChange = (e) => {

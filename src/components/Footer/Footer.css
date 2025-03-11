@@ -9,19 +9,21 @@
 .footer__copyright {
   color: #b6bcbf;
   margin: 32px auto 26px 104px;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0px;
 }
 
-.footer__links {
+.footer__link {
   color: black;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .footer__tripleten {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -43,7 +45,7 @@
   align-items: center;
   gap: 15px;
   color: black;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -57,14 +59,19 @@
   margin: 28px 104px 28px 0;
 }
 
-.footer__icon_github {
+.footer__icon {
   width: 24px;
   height: 24px;
 }
 
-.footer__icon_fb {
-  width: 24px;
-  height: 24px;
+.footer__link:hover {
+  color: #3399ff;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.footer__link:hover .footer__icon {
+  filter: brightness(0.1);
 }
 
 /* --- Responsive Styles for Smaller Screens --- */
@@ -88,21 +95,15 @@
 @media screen and (max-width: 500px) {
   .footer__copyright {
     margin: 8px 16px 32px 16px;
-    /*justify-content: space between; */
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 502px) {
   .footer {
     flex-direction: column-reverse;
     height: 176px;
     position: relative;
   }
-
-  /*.footer__copyright {
-    margin: 38px 16px 32px 16px;
-    /*justify-content: space between; 
-  }*/
 
   .footer__home {
     flex-direction: column;
@@ -116,7 +117,7 @@
   }
 
   .footer__tripleten {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
   .footer__socials {
@@ -128,6 +129,6 @@
 
   .footer__links {
     flex-direction: column;
-    gap: 5px; /* Reduce spacing for compact layout */
+    gap: 5px;
   }
 }

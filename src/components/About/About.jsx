@@ -6,7 +6,11 @@ function About({}) {
   return (
     <div className="about">
       <div className="about__pic-container">
-        <img src={AuthorPic} className="about__author-pic" />
+        <img
+          src={AuthorPic}
+          className="about__author-pic"
+          alt="Picture of the author"
+        />
       </div>
       <div className="about__author-text">
         <h2 className="about__title">About the author</h2>
