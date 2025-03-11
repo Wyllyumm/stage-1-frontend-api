@@ -92,7 +92,7 @@ const SignupModal = ({
       </label>
       <button
         onClick={handleLoginClick}
-        className="modal__or-btn"
+        className="modal__or-btn modal__or-btn--signin"
         type="button"
       >
         or Sign in

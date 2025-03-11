@@ -231,7 +231,7 @@
   color: #3399ff;
 }
 
-.modal-open .navigation__menu-button {
+.modal-open .navigation__dropdown-button {
   display: none;
 }
 
@@ -246,22 +246,25 @@
 @media screen and (max-width: 490px) {
   .modal__close {
     top: -40px;
-    right: 23px;
+    right: 13px;
   }
 }
 
 @media screen and (max-width: 490px) {
   .modal {
-    top: 10px;
+    top: 164px;
   }
-
   .modal__content {
-    height: 86vh;
+    height: 100vh;
     padding: 16px 16px 64px;
   }
 
   .modal__or-btn {
     top: 266px;
     bottom: auto;
+  }
+
+  .modal__or-btn--signin {
+    top: 334px;
   }
 }

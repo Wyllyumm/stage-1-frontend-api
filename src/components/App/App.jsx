@@ -5,12 +5,12 @@ import "./App.css";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
-import About from "../About/About";
+
 import Profile from "../Profile/Profile";
 import Footer from "../Footer/Footer";
 import LoginModal from "../LoginModal/LoginModal";
 import SignupModal from "../SignupModal/SignupModal";
-import { APIkey } from "../../utils/constants";
+
 import { getNews } from "../../utils/NewsApi";
 import /*saveArticle, removeSavedArticle, getItems */ "../../utils/Api";
 import * as auth from "../../utils/auth";
@@ -208,7 +208,7 @@ function App() {
     }
 
     return () => {
-      document.body.classList.remove("modal-open"); // Cleanup on unmount
+      document.body.classList.remove("modal-open");
     };
   }, [activeModal]);
 
