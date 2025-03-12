@@ -6,6 +6,6 @@ body {
 }
 
 /* for seeing elements at different resolutions */
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
