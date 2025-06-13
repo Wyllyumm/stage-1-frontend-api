@@ -1,2 +1,2 @@
-# stage-1-frontend-api
-Front end code for NewExplorer App (final project)
+# stage-2-backend
+Back end code for NewExplorer App (final project)
