@@ -1,0 +1,151 @@
+.search__title {
+  max-width: 608px;
+  margin: 80px 0 32px;
+  font-family: "Roboto-slab";
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: 0px;
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search__description {
+  margin: 0 0 88px;
+  max-width: 608px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.search__input-container {
+  margin: 0 auto 80px;
+  max-width: 608px;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search__input {
+  /* width: 100%; */
+  border: none;
+  border-radius: 100px;
+  padding: 15px 60px 15px 5px;
+  outline: none;
+  width: 440px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+
+.search__button {
+  max-width: 168px;
+  width: 100%;
+  position: absolute;
+  right: 5px;
+  border-radius: 100px;
+  border: none;
+  background-color: #e6e8eb;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.search__button:hover {
+  /* background: linear-gradient(90deg, #0056b3, #004494);*/
+  background-color: #347eff;
+}
+
+.search__button:active {
+  transform: scale(1.1);
+  background-color: #2a65cc;
+}
+
+.search__button--active {
+  background-color: #2f71e5;
+}
+
+@media screen and (max-width: 800px) {
+  .search__description {
+    margin: 0 auto 48px auto;
+    max-width: 385px;
+  }
+
+  .search__title {
+    max-width: 385px;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 38px auto 16px auto;
+  }
+
+  .search__input-container {
+    max-width: 452px;
+  }
+
+  .search__input {
+    width: 100%;
+  }
+
+  .search__button {
+    right: 58px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .search__input {
+    max-width: 390px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search__input-container {
+    max-width: 300px;
+    height: 130px;
+  }
+
+  .search__input {
+    max-width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .search__description {
+    max-width: 350px;
+  }
+
+  .search__title {
+    margin: 30px 16px 16px 16px;
+  }
+
+  .search__button {
+    max-width: 100%;
+    bottom: 4px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .search__input-container {
+    max-width: 288px;
+  }
+
+  .search__description {
+    max-width: 288px;
+  }
+}

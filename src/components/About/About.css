@@ -1,0 +1,123 @@
+.about {
+  display: flex;
+  background-color: #ffffff;
+}
+
+.about__pic-container {
+  width: 464px;
+  height: 464px;
+  overflow: hidden;
+  display: flex;
+  margin: 80px 0 80px 104px;
+}
+
+.about__author-pic {
+  border-radius: 1000px;
+  width: 100%;
+  height: 100%;
+}
+
+.about__title {
+  margin: 131px auto 24px 56px;
+  font-size: 40px;
+  width: 600px;
+  font-family: "Roboto-slab", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0px;
+}
+
+.about__description {
+  max-width: 600px;
+  margin: 0 auto auto 56px;
+  padding-right: 10px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  padding-bottom: 303px;
+}
+
+@media screen and (max-width: 1110px) {
+  .about__pic-container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .about__pic-container {
+    width: 232px;
+    height: 232px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about__title {
+    margin: 90px 40px 24px 56px;
+    width: 424px;
+  }
+  .about__pic-container {
+    margin: 80px 0 80px 40px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .about__title {
+    margin: 40px 40px 16px 32px;
+    width: 375px;
+  }
+
+  .about__description {
+    padding-bottom: 96px;
+    margin: 0 auto auto 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+  }
+  .about__title {
+    margin: 0 auto 16px auto;
+  }
+
+  .about__pic-container {
+    margin: 32px auto;
+  }
+  .about__description {
+    margin: 0 16px auto 16px;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .about__title {
+    margin: 0 auto 16px auto;
+    max-width: 290px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .about__description {
+    padding-bottom: 128px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .about {
+    max-width: 320px;
+    flex-direction: column;
+  }
+
+  .about__title {
+    margin: 0 16px 16px 16px;
+  }
+
+  .about__pic-container {
+    width: 272px;
+    height: 272px;
+
+    margin: 32px 24px 24px 24px;
+  }
+}

@@ -1,0 +1,11 @@
+@import url(./vendor/fonts.css);
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+/* for seeing elements at different resolutions */
+/* * {
+  outline: 1px solid red;
+} */

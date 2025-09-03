@@ -1,0 +1,66 @@
+.profile-header {
+  background-color: #ffffff;
+}
+
+.profile-header__container {
+  margin: 40px auto 56px 104px;
+  background-color: #ffffff;
+}
+
+.rofile-header_saved-articles {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.profile-header__personal {
+  max-width: 530px;
+  max-height: 92px;
+  font-family: "Roboto-slab", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0px;
+}
+
+.profile-header__keywords {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.profile-header__span-keywords {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+@media screen and (max-width: 770px) {
+  .profile-header__personal {
+    max-width: 336px;
+  }
+  .profile-header__container {
+    margin: 24px auto 32px 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profile-header__keywords {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-header__personal {
+    max-width: 288px;
+  }
+  .profile-header__container {
+    margin: 8px auto 50px 16px;
+  }
+}
